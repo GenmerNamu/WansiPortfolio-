@@ -4,6 +4,198 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
 </head>
+
+<style>
+    
+    /* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: dimgrey;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+/* Header Styles */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h2 {
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    border: 5px solid #3498db;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.profile-info {
+    margin: 20px 0;
+}
+
+.profile-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.email-link {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* Content Sections */
+.content-section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    
+}
+
+.content-section:hover {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    background: #f8f9fa;
+    margin: 8px 0;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+ul li::before {
+    content: "✨";
+    position: absolute;
+    left: 8px;
+    font-size: 1.2em;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons img {
+    margin: 0 15px;
+    border-radius: 12px;
+    
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* HR Styling */
+hr {
+    border: none;
+    height: 2px;
+    margin: 30px 0;
+}
+
+/* Fun Facts Special Styling */
+.fun-fact li {
+    border-left-color: #e67e22;
+}
+
+.fun-fact li::before {
+    content: "😎";
+}
+
+/* Projects Section */
+.projects li {
+    border-left-color: #27ae60;
+}
+
+.projects li::before {
+    content: "🚀";
+}
+
+/* Skills Section */
+.skills li {
+    border-left-color: #9b59b6;
+}
+
+.skills li::before {
+    content: "⭐";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .profile-section {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .social-icons img {
+        width: 60px;
+        margin: 10px;
+    }
+}
+    
+</style>
+
+
+    
 <body>
 
 
