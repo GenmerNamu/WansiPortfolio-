@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homepage</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+  
+  *{
+box-sizing:border-box;
+}
+
+body{
+    background-color: black;
+    
+    
+}
+
+header{
+    width: 100%;
+    display: block;
+    background: black;
+    text-align: center;
+    color: lime;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 6px 11px lime;
+}
+
+header p{
+    margin: 5px 0 0 0;
+    font-size: 15px;
+} 
+
+main{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 10px;
+    width: 220px;
+}
+
+nav li a{
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background: black;
+    text-decoration: none;
+    color: lime;
+    box-shadow: 0 6px 11px lime;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav li a:hover{
+    background: lime;
+    color: Black;
+    box-shadow: 0 6px 11px black;
+}
+
+
+.stylelinks p{
+    margin: 3px;
+    color: lime;
+}
+
+.stylelinks a{
+    margin: 3px;
+    text-decoration: underline;
+    color: lime;
+    font-weight: bold;
+    padding: 6px 1px;
+    transition: 0.1s;
+    display: inline-block;
+}
+
+.stylelinks a:hover{
+    color: white;
+}
+
+section{
+    flex: 2;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px lime;
+    
+    padding: 10px;
+    margin: 0 10px;
+}
+
+aside{
+    flex: 1;
+    padding: 20px;
+    margin: 0px;
+    color: lime;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 6px 11px lime;
+}
+
+footer{
+    
+    color: lime ;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 6px 11px lime;
+    border-radius: 20px;
+}  
+
+@media screen and (max-width:600px)
+{
+main{
+    flex-direction: column;
+}
+
+nav ul{
+    width: 100%;
+}
+
+aside, section{
+    width: 100%;
+    margin: 10px 0;
+}
+}
+  
+</style>
+
+
+
+<body>
+
+<header>
+
+Welcome to My Homepage
+<p>Use the menu to select different Stylesheets</p>
+
+</header>
+
+<main>
+
+<nav>
+
+<ul>
+<li><a href="#">Stylesheet 1</a></li>
+<li><a href="#">Stylesheet 2</a></li>
+<li><a href="#">Stylesheet 3</a></li>
+<li><a href="#">Stylesheet 4</a></li>
+<li><a href="#">No Stylesheet</a></li>
+</ul>
+
+</nav>
+
+<section>
+<h1 style="color: lime;">Same Page Different Stylesheets</h1>
+
+<div class="stylelinks">
+<p>
+This is a demonstration of how different stylesheets can change the layout of your HTML page.
+You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+<br>
+<a href="#">Stylesheet1,</a> 
+<a href="#">Stylesheet2,</a> 
+<a href="#">Stylesheet3,</a> 
+<a href="#">Stylesheet4,</a> 
+</p>
+
+<h2 style="color: lime;">No Styles</h2>
+
+<p>
+This page uses DIV elements to group different sections of the HTML page.
+Click here to see how the page looks like with no stylesheet.
+<br>
+<a href="#">No Stylesheet</a> 
+</p>
+</div>
+</section>
+
+<aside>
+<h3 style="color: lime;" >Side-Bar</h3>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt
+ut laoreet dolore magna aliquam erat volutpat.
+</p>
+</aside>
+
+</main>
+
+<footer>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores aliquam ratione qui quasi consectetur incidunt consequatur dolor. Voluptas ullam voluptate minima, quam pariatur iusto atque accusantium, illum quos consequatur earum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolorem tenetur veritatis quia non iusto illum reiciendis animi qui deserunt perferendis rem voluptatem numquam soluta quasi culpa, nobis adipisci laboriosam.
+</footer>
+
+</body>
+</html>
