@@ -17,21 +17,21 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: dimgrey;
+    color: #b0b0b0;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    
+    background: #000000;
 }
 
 /* Header Styles */
 h1, h2, h3 {
-    color: #2c3e50;
+    color: #00ff00;
     margin-bottom: 15px;
 }
 
 h2 {
-    border-bottom: 3px solid #3498db;
+    border-bottom: 3px solid #32cd32;
     padding-bottom: 10px;
     font-size: 1.8em;
 }
@@ -39,19 +39,22 @@ h2 {
 /* Profile Section */
 .profile-section {
     text-align: center;
-    background: white;
+    background: #111111;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,255,0,0.2);
     margin-bottom: 30px;
 }
 
 .profile-img {
+    display: block;
+    margin: 0 auto 20px auto;
     border-radius: 50%;
-    border: 5px solid #3498db;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 5px solid #00ff00;
+    box-shadow: 0 5px 15px rgba(0,255,0,0.3);
 }
+
+
 
 .profile-info {
     margin: 20px 0;
@@ -60,31 +63,31 @@ h2 {
 .profile-info p {
     font-size: 1.1em;
     margin: 10px 0;
+    color: #cccccc;
 }
 
 .email-link {
-    color: #e74c3c;
+    color: #32cd32;
     text-decoration: none;
     font-weight: bold;
 }
 
 .email-link:hover {
-    color: #c0392b;
+    color: #00ff00;
     text-decoration: underline;
 }
 
 /* Content Sections */
 .content-section {
-    background: white;
+    background: #111111;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    
+    box-shadow: 0 8px 25px rgba(0,255,0,0.1);
 }
 
 .content-section:hover {
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0,255,0,0.2);
 }
 
 /* Lists */
@@ -97,10 +100,11 @@ ul li {
     padding: 12px 0;
     padding-left: 30px;
     position: relative;
-    background: #f8f9fa;
+    background: #1a1a1a;
     margin: 8px 0;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #00ff00;
+    color: #e0e0e0;
 }
 
 ul li::before {
@@ -108,18 +112,18 @@ ul li::before {
     position: absolute;
     left: 8px;
     font-size: 1.2em;
+    color: #32cd32;
 }
 
 /* Links */
 a {
-    color: #3498db;
+    color: #00ff00;
     text-decoration: none;
     font-weight: 500;
 }
 
 a:hover {
-    color: #2980b9;
-    text-decoration: underline;
+    color: #32cd32;
 }
 
 /* Social Media Icons */
@@ -131,45 +135,51 @@ a:hover {
 .social-icons img {
     margin: 0 15px;
     border-radius: 12px;
-    
+    border: 2px solid #00ff00;
 }
 
 .social-icons img:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,255,0,0.5);
 }
 
 /* HR Styling */
 hr {
     border: none;
     height: 2px;
+    background: linear-gradient(90deg, transparent, #00ff00, transparent);
     margin: 30px 0;
+    box-shadow: 0 0 10px rgba(0,255,0,0.3);
 }
 
 /* Fun Facts Special Styling */
 .fun-fact li {
-    border-left-color: #e67e22;
+    border-left-color: #32cd32;
 }
 
 .fun-fact li::before {
     content: "😎";
+    color: #32cd32;
 }
 
 /* Projects Section */
 .projects li {
-    border-left-color: #27ae60;
+    border-left-color: #00ff00;
 }
 
 .projects li::before {
     content: "🚀";
+    color: #00ff00;
 }
 
 /* Skills Section */
 .skills li {
-    border-left-color: #9b59b6;
+    border-left-color: #32cd32;
 }
 
 .skills li::before {
     content: "⭐";
+    color: #32cd32;
 }
 
 /* Responsive Design */
@@ -191,6 +201,7 @@ hr {
         margin: 10px;
     }
 }
+
     
 </style>
 
